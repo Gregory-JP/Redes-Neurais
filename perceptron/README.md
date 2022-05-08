@@ -1,14 +1,38 @@
-# Covid-19_and_Pneumonia_X-Ray_Detector
-Aim of this project is to detect Covid-19 from X-ray and also able to differentitate Covid-19 from viral pneumonia and bacterial pneumonia. I have created a custom dataset that contains covid-19 x-ray images, viral pneumonia x-ray images, bacterial pneumonia x-ray iamges and normal person x-ray images.Each class contains 133 images.
+# Perceptron
 
-## Dataset
+O tipo mais básico de Rede Neural Artificial é formada por apenas um neurônio, o Perceptron. Inicialmente, o Perceptron foi projetado para ser um classificador binário linear responsável por mapear uma ou mais entradas em uma saída desejada. Porém, também podemos utilizá-lo para resolver problemas de regressão linear. Ele foi projetado em 1957 por Frank Rosenblatt.
 
-I have used data from https://github.com/ieee8023/covid-chestxray-dataset and https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia. 
+O perceptron é formado por:
 
-0 - Covid-19
+<p align='center'>
+  <img 
+       src='https://www.researchgate.net/publication/355759683/figure/fig5/AS:1142409744396299@1649383116832/Single-Perceptron-by-Frank-Rosenblatt.png' 
+       width='400'>
+  </img>
+</p>
 
-1 - Normal X-ray
+- Entradas x<sub>1</sub>,...,x<sub>n</sub> representam os atributos dos seus dados com dimensionalidade n. O Perceptron aceita qualquer tamanho de entrada, porém a saída é sempre apenas um valor.
+- Junção aditiva &sum;: também chamada de _função agregadora_, nada mais é que a soma ponderada das entradas com os pesos (w<sub>1</sub>,...,w<sub>n</sub>). Em geral, o resultado é somado com um bias _b_, responsável por deslocar o resultado do somatório. A junção aditiva é descrita pela seguinte fórmula:
 
-2 - Viral Pneumonia X-ray
+<h2 align='center'>&sum;<sub>i</sub><sup>n</sup> x<sub>i</sub>w<sub>i</sub> + <i>b</i> </h2>
 
-3 - Bacterial Pneumonia X-ray
+- Função de ativação &fnof;: utilizada para mapear o resultado da junção aditiva em uma saída esperada. Logo, o Perceptron é representado pela seguinte fórmula matemática:
+
+<h2 align='center'> 
+  Y = &fnof;(&sum;<sub>i</sub><sup>n</sup> x<sub>i</sub>w<sub>i</sub> + <i>b</i>)
+</h2>
+
+Onde:
+
+- n: representa a dimensionalidade das amostras, ou seja, a quantidade de atributos de cada amostra.
+- x<sub>i</sub>: representam os atributos de uma amostra que servem de entrada para o Perceptron.
+- w<sub>i</sub>: representam os __pesos sinápticos__ que ponderam as entradas.
+- _b_: representa o bias, responsável por deslocar a fronteira de decisão além da origem e não depende de nenhum valor de entrada. Repare que o bias encontra-se fora do somatório.
+- &fnof;: função de ativação. Quando a função de ativação é linear, ou seja, nenhuma transformação é aplicada no resultado da junção aditiva, o Perceptron atua como um Regressor Linear. Se precisamos efetuar uma Classificação binária, devemos utilizar a função _step_ (também conhecida como _função degrau_) para mapear a saída em um valor discreto (0 ou 1):
+
+- Y: representa a saída do Perceptron (o valor predito).
+
+Observações importantes:
+
+- O Perceptron não faz Classificação Multiclasse.
+- A atualização dos pesos é *online*, ou seja, efetuada amostra a amostra utilizando uma fórmula pré-definida.
