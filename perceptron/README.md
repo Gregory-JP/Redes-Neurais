@@ -1,5 +1,12 @@
 # Perceptron
 
+## Intuição do Perceptron
+Nesse Jupyter Notebook você terá alguns plots interativos, tente resolvê-los. É algo bem simples e que simula o real funcionamento de um perceptron. Portanto, você realizará o trabalho do perceptron, mas de forma intuitiva (por isso o nome do notebook).
+
+## Implementação do Perceptron
+Aqui nós já temos as implementações do perceptron, feitas com Python e Numpy. Também há plots para um entendimento mais visual do que é o perceptron.
+
+## Perceptron
 O tipo mais básico de Rede Neural Artificial é formada por apenas um neurônio, o Perceptron. Inicialmente, o Perceptron foi projetado para ser um classificador binário linear responsável por mapear uma ou mais entradas em uma saída desejada. Porém, também podemos utilizá-lo para resolver problemas de regressão linear. Ele foi projetado em 1957 por Frank Rosenblatt.
 
 O perceptron é formado por:
