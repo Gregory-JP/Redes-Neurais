@@ -28,8 +28,9 @@ Onde:
 - x<sub>i</sub>: representam os atributos de uma amostra que servem de entrada para o Perceptron.
 - w<sub>i</sub>: representam os __pesos sinápticos__ que ponderam as entradas.
 - _b_: representa o bias, responsável por deslocar a fronteira de decisão além da origem e não depende de nenhum valor de entrada. Repare que o bias encontra-se fora do somatório.
-- &fnof;: função de ativação. Quando a função de ativação é linear, ou seja, nenhuma transformação é aplicada no resultado da junção aditiva, o Perceptron atua como um Regressor Linear. Se precisamos efetuar uma Classificação binária, devemos utilizar a função _step_ (também conhecida como _função degrau_) para mapear a saída em um valor discreto (0 ou 1):
-
+- &fnof;: função de ativação. Quando a função de ativação é linear, ou seja, nenhuma transformação é aplicada no resultado da junção aditiva, o Perceptron atua como um Regressor Linear. Se precisamos efetuar uma Classificação binária, devemos utilizar a função _step_ (também conhecida como _função degrau_) para mapear a saída em um valor discreto (0 ou 1): <br>
+<h3 align='center'>&fnof; = 1; <i> se wx + b > 0 </i> <br> &fnof; = 0; <i> caso contrário </i></h3>
+  
 - Y: representa a saída do Perceptron (o valor predito).
 
 Observações importantes:
