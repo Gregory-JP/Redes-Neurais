@@ -56,4 +56,3 @@ A RN fará atualização de pesos e também pode conter camadas ocultas, que pod
 - eLU
 
 Cada uma pode ser aplicada em diferentes tipos de problemas, podendo ser eficientes ou não, depende do tipo de problema a ser resolvido.
-Você vai encontrar muita mais informações na [documentação](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html).
